@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Good Array!</title>
+  </head>
+  <body>
+
+    <!-- How easy is it to loop through numbers? -->
+    <script>
+
+      // Set up an array of numbers.
+      // shortname varibles inside bucket, bad idea to use keywords used else where, 
+      //there is a limited on how many objects within objects but its like the size of the universe
+    
+      var motorcycle = {
+        wheels: 2,
+        miles: 0,
+        drive: function (){
+          console.log('oks its driving')
+          this.miles++
+          // 'this' is an operator that accesses objects of the scope
+          console.log('now has ' + this.miles + 'miles on the odometer')
+        }
+      }
+      motorcycle.drive()
+      motorcycle.drive() 
+      motorcycle.drive()
+      motorcycle.drive()
+      motorcycle.drive()
+
+      var x = typeof console.log
+      console.log
+
+      var message = "hello world";
+      // strings are objects
+      var message = 14.34895672938457234
+
+      console.log(message.toPrecision)
+
+      
+
+    //   var jared = {
+    //       lastname: 'Starkey',
+    //       spouse: 'Emma',
+    //       age: 35,
+    //       likes: 'food',
+    //       kumquat: 'spelledcorrectly',
+    //       home: {
+    //         rooms: 3,
+    //         bathrooms: 2.5,
+    //         dirty: 'yes',
+    //         cleanhouse: "yes"
+    //       }
+    //   }
+
+    //   jared.home.cleanhouse()
+    //   // scope inside of the scope {.......} deteremines which argument console.log will print
+    //   function somemath (agrumenta, argumentb) {
+    //     var c = argumenta + argumentb
+    //   }
+      
+    //   console.log(c)
+
+    // //printing code TOP CONSOLE LOG IS MORE APPROPIATE THAN 2ND CONSOLE LOG
+    //   console.log(jared.home.rooms.age)
+    //   console.log(jared['lastname'])
+
+    </script>
+    
+  </body>
+</html>
